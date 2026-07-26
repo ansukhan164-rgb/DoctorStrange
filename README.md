@@ -1,5 +1,4 @@
-# DoctorStrange
-# 🩺 DoctorStrange
+#  DoctorStrange
 
 > An intelligent healthcare platform powered by AI to assist users with medical insights, symptom analysis, health recommendations, and patient management.
 
