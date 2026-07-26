@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Strange — Mystic Arts Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/hands.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1675466862/camera_utils.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <canvas id="bgCanvas"></canvas>
+    <video id="cam" autoplay playsinline></video>
+    <canvas id="fxCanvas"></canvas>
+
+    <div id="hud">
+        <span class="badge" id="bTrail">☄ Trail</span>
+        <span class="badge" id="bSmoke">🌫 Smoke</span>
+        <span class="badge" id="bPortal">🌀 Portal</span>
+        <span class="badge" id="bShield">🛡 Shield</span>
+        <span class="badge" id="bSpark">⚡ Sparks</span>
+    </div>
+
+    <div id="title">MYSTIC ARTS ENGINE</div>
+    <div class="fps" id="fps"></div>
+    <button id="startBtn">⟐ AWAKEN ⟐</button>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
